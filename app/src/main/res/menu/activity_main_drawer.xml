@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:checkableBehavior="single"
+        android:menuCategory="container"
+        android:visible="true">
+        <item
+            android:id="@+id/app_bar_search"
+            android:icon="@drawable/ic_search_black_24dp"
+            android:title="Buscar"
+            app:actionViewClass="android.widget.SearchView"></item>
+        <item
+            android:id="@+id/nav_home"
+            android:checkable="true"
+            android:title="Portada" />
+        <item
+            android:id="@+id/actualidades"
+            android:title="Actualidades" />
+        <item
+            android:id="@+id/genero"
+            android:title="Género y Sexualidad" />
+        <item
+            android:id="@+id/cultura"
+            android:title="Cultura" />
+        <item android:title="Pueblos Originarios" />
+        <item android:title="Educación" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:title="Mas" />
+    </group>
+    <group
+        android:checkableBehavior="single"
+        android:menuCategory="container"
+        android:visible="true">
+        <menu >
+            <item
+                android:icon="@android:drawable/sym_action_email"
+                android:title="Contactenos" />
+            <item
+                android:id="@+id/nav_slideshow"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="@string/menu_slideshow" />
+        </menu>
+    </group>
+</menu>
